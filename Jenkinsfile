@@ -4,14 +4,8 @@ pipeline {
     stages {
         stage("Build") {
             steps {
-                sh 'echo "Buuild"'
+                sh 'echo "Hola mundo"'
             }
-        }
-
-        stage("SetUp"){
-            steps{
-                sh './script.sh'
-            }   
         }
     }
 }
