@@ -21,10 +21,10 @@ pipeline {
                 }
             }
         }
-        stage('Build') {
-            steps {
-                sh 'echo "$Parameter"'
-            }
-        }
+        // stage('Build') {
+        //     steps {
+        //         sh 'echo "$Parameter"'
+        //     }
+        // }
     }
 }
