@@ -8,7 +8,7 @@ pipeline {
                     properties([
                         parameters([
                             choice(
-                                choices: ['ONE', 'TWO'], 
+                                choices: ['ONE', 'TWO','three'], 
                                 name: 'Parameter'
                             )
                             
