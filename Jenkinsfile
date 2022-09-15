@@ -6,7 +6,7 @@ pipeline {
             steps {
                 script {
                     def foldersList = []
-                    def output = sh returnStdout: true, script: "ls -d */"
+                    def output = sh returnStdout: true, script: "ls -d */ | cut -f1 -d'/'"
                     foldersList = output.tokenize('\n').collect() { it }
                     echo foldersList
                     properties([
