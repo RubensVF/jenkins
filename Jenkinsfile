@@ -6,7 +6,7 @@ pipeline {
             steps {
                 script {
                     def foldersList = []
-                    def output = sh returnStdout: true, script: "ls -l ${JENKINS_HOME} | grep ^d | awk '{print \$9}'"
+                    def output = sh returnStdout: true, script: "ls -d */"
                     foldersList = output.tokenize('\n').collect() { it }
                     echo foldersList
                     properties([
